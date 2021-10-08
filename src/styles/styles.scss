@@ -3,3 +3,29 @@ body{
     background-color: white;
     padding: 100px;
 }
+
+.derecha {
+    display: block !important;
+    text-align: right;
+  }
+  
+  .miformulario {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+  }
+  .error {
+    max-width: 400px;
+    display: block;
+  }
+  
+  .exito {
+    max-width: 400px;
+    display: block;
+  }
+  
+  .back-button{
+      width: fit-content !important;
+      display: block;
+      float: right;
+  }

@@ -39,22 +39,22 @@ export const Formulario = () => {
 
   return (
     <div className="container">
-      <div className="row mt-3">
-         <Link to={ "/lista" } className="btn btn-danger derecha"  >IR AL DASHBOARD</Link>
-      </div>
       <div className="row">
+
         <div className="card p-5 miformulario">
+        <Link to={ "/lista" } className="btn btn-danger back-button derecha"  >IR AL DASHBOARD</Link>
+
           <h2 className="text-danger">INGRESE SUS DATOS</h2>
           <p className="text-danger">NOMBRE COMPLETO</p>
           <input
-            className="mb-2"
+            className="form-control mb-2"
             type="text"
             value={nombre}
             onChange={handleChangeNombre}
             placeholder="Nombre"
           />
           <p className="text-danger">PUESTO</p>
-          <select className="mb-2" onChange={handleChangePuesto} value={puesto}>
+          <select className="form-control mb-2" onChange={handleChangePuesto} value={puesto}>
             <option  value="gerente">
               Gerente
             </option>
@@ -65,7 +65,7 @@ export const Formulario = () => {
           <p className="text-danger">ID PERSONAL</p>
           <h6 className="text-danger">(*solo numeros)</h6>
           <input
-            className="mb-2"
+            className="form-control mb-2"
             type="text"
             maxLength="5"
             minLength="5"
